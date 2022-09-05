@@ -11,9 +11,6 @@ export default function QrScan({ navigation }) {
     <Background>
       <BackButton goBack={navigation.goBack} />
       <Header>What is Help?</Header>
-      <Paragraph>
-        Click SCAN button, let's start QrCode Scan.
-      </Paragraph>
       <Button
         mode="outlined"
         onPress={() => navigation.navigate('Scanner')}
@@ -28,7 +25,7 @@ export default function QrScan({ navigation }) {
       </Button>
       <Button
         mode="outlined"
-        onPress={() => navigation.navigate('Scanner')}
+        onPress={() => navigation.navigate('WebScreen')}
       >
         FILE DOWNLOAD
       </Button>

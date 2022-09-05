@@ -12,7 +12,7 @@ import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
 
 export default function LoginScreen({ navigation }) {
-  const [email, setEmail] = useState({ value: 'Hamaya930@outlook.com', error: '' })
+  const [email, setEmail] = useState({ value: 'reonardo@gmail.com', error: '' })
   const [password, setPassword] = useState({ value: '!vidrnd930!', error: '' })
 
   const onLoginPressed = () => {
@@ -35,7 +35,6 @@ export default function LoginScreen({ navigation }) {
       <Logo />
       <Header>Welcome back.</Header>
       <TextInput
-        defaultValue= "Hamaya930@outlook.com"
         label="Email"
         returnKeyType="next"
         value={email.value}
@@ -67,7 +66,7 @@ export default function LoginScreen({ navigation }) {
         Login
       </Button>
       <View style={styles.row}>
-        <Text>Don’t have an account? </Text>
+        <Text>Don’t have an account?</Text>
         <TouchableOpacity onPress={() => navigation.replace('RegisterScreen')}>
           <Text style={styles.link}>Sign up</Text>
         </TouchableOpacity>

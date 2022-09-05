@@ -9,9 +9,9 @@ export default function StartScreen({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
+      <Header>QRCode Reader</Header>
       <Paragraph>
-        The easiest way to start with your amazing application.
+        Let's open new World with QrScanApp.
       </Paragraph>
       <Button
         mode="contained"

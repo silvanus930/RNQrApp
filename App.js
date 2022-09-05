@@ -11,10 +11,13 @@ import {
   ResetPasswordScreen,
   QrScan,
   Dashboard,
+  VideoScreen,
+  WebScreen,
   Scanner,
 } from './src/screens'
 
 import { ScreenStack } from 'react-native-screens'
+
 
 StatusBar.setBarStyle('light-content')
 const Stack = createStackNavigator()
@@ -30,11 +33,13 @@ export default function App() {
           }}
         >
           <Stack.Screen name="StartScreen" component={StartScreen} />
+          <Stack.Screen name="VideoScreen" component={VideoScreen} />
           <Stack.Screen name="Scanner" component={Scanner} />
           <Stack.Screen name="QrScan" component={QrScan} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="WebScreen" component={WebScreen} />
           <Stack.Screen
             name="ResetPasswordScreen"
             component={ResetPasswordScreen}

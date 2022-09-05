@@ -19,6 +19,7 @@ export default function Scanner({ navigation }) {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
+    
     alert(`Bar code with type ${type} and data ${data} has been scanned!`);
   };
 
@@ -37,6 +38,7 @@ export default function Scanner({ navigation }) {
         //style={StyleSheet.container}
       />
       <BackButton goBack={navigation.goBack} />
+      <Button title={'Scan'} onPress={() => navigation.navigate('WebScreen')} />
       {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
     </Background>
   );
